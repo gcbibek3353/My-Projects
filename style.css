@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select:none;
+}
+body{
+    background: #f0f2f5;
+}
+.m-auto{
+    margin: 5px auto;
+}
+.navbar{
+    width: 100vw;
+    background: #6366f1;
+}
+.navbar div{
+    text-transform: uppercase;
+    color: white;
+}
+.py-24{
+    padding-top: 4rem;
+    padding-bottom: 0;
+}
+.py-8{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.footer{
+    margin-top: 50px;
+    font-weight: bold;
+    background: black;
+    color: white;
+}
+img{
+    cursor: pointer;
+}
+img:hover{
+    transform: scale(0.8);
+}
+.btn{
+    border-radius: 10px;
+}

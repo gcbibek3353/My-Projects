@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    background: linear-gradient(90deg,rgb(104, 113, 117),rgb(66, 139, 168));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.game-area{
+    width: 350px;
+    height: 500px;
+    border: 2px solid black;
+}
+#btn{
+    font-size: 2rem;
+    background-color: #6366f1;
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 5px 15px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+#btn:active{
+    transform: scale(0.8);
+}
+.slider{
+    width: 150px;
+    height: 20px;
+    visibility: hidden;
+    background-color: red;
+    position: relative;
+}
+#slider1{
+    visibility: visible;
+}
+.animate{
+    animation: slide 4s infinite linear;
+}
+@keyframes slide{
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 200px;
+    }
+    100%{
+        left: 0px;
+    }
+}

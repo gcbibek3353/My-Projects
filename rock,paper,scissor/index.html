@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper and Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="screen">
+
+        <div class="game-container">
+
+            <h1 class="heading"> Rock Paper and Scissors</h1>
+
+            <h2> You -
+                <span id="playerScore">0</span>
+                <span id="playerChoice">--choice</span>
+            </h2>
+
+            <div class="images">
+                <img src="rock.png" id="playerRock" onclick="select('Rock')">
+                <img src="paper.png" id="playerPaper" onclick="select('Paper')">
+                <img src="scissor.png" id="playerScissor" onclick="select('Scissor')">
+            </div>
+
+            <h2>CPU-
+                <span id="computerScore">0</span>
+                <span id="computerChoice">--choice</span>
+            </h2>
+
+            <div class="images">
+                <img src="rock.png" id="computerRock">
+                <img src="paper.png" id="computerPaper">
+                <img src="scissor.png" id="computerScissor">
+            </div>
+
+            <div class="down">
+                <div class="info win_info">You Won!</div>
+                <div class="info tie_info">It's a Tie!</div>
+                <div class="info lost_info">You Lost!</div>
+                <button id="btn" onclick="location.reload()">Reset</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
